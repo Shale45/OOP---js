@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+html,
+body {
+  height: auto;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../img/1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+header {
+  background-color: #1a1b24; }
+  header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300%;
+    text-align: center;
+    padding: 50px 0;
+    color: wheat; }
+
+.container {
+  width: 70%;
+  height: auto;
+  margin: 0 auto; }
+  .container h2 {
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0;
+    color: wheat; }
+  .container h3 {
+    color: wheat; }
+
+article {
+  background-color: #1a1b24;
+  opacity: 0.9;
+  margin: 30px 0;
+  padding: 10px 15px;
+  border-radius: 0 20px; }
+  article h3 {
+    text-align: center;
+    padding: 10px 0; }
+  article input,
+  article select {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 20px;
+    border-radius: 10px; }
+  article input[type=button] {
+    background-color: aqua;
+    display: block;
+    font-weight: bold;
+    font-size: 90%;
+    width: 80%;
+    margin: 0 auto; }
+  article .error-display {
+    color: red;
+    font-weight: bold;
+    padding: 5px 0; }
+  article .display-msg {
+    color: white;
+    margin: 10px 0;
+    padding-left: 10px; }
+
+.left {
+  text-align: left;
+  margin-top: 10px; }
+
+ol, ul, li {
+  margin-top: 10px;
+  list-style-type: none; }
+
+footer {
+  background-color: #1a1b24;
+  padding: 30px;
+  margin-top: 60px; }
+  footer p {
+    color: wheat;
+    text-align: center;
+    margin: 10px 0; }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 80%; }
+
+  #pax {
+    float: left;
+    width: 46%; }
+
+  #flt {
+    float: right;
+    width: 46%; }
+
+  #pax-to-flt {
+    clear: left;
+    float: left;
+    width: 46%;
+    margin-bottom: 60px; }
+
+  #flt-to-apt {
+    float: right;
+    width: 46%; }
+
+  #all-flts {
+    clear: left;
+    width: 48%;
+    margin: 50px auto; }
+
+  #pax-to-flt::after {
+    content: "";
+    clear: both;
+    display: table; } }
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 70%; }
+
+  #pax,
+  #flt,
+  #pax-to-flt,
+  #flt-to-apt,
+  #all-flts {
+    max-width: 700px; }
+
+  #pax-to-flt::after {
+    content: "";
+    clear: both;
+    display: table; } }
+
+/*# sourceMappingURL=main.css.map */

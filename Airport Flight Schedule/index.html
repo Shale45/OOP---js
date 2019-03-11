@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Airport Flight Schedule</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+  <script src="js/entities.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>AIRPORT &nbsp;&quot;NIKOLA TESLA&quot;</h1>
+
+  </header>
+  <main class="container">
+    <h2>FLIGHT SCHEDULE</h2>
+    <form>
+
+      <article id="pax">
+        <h3>CREATE PASSENGER</h3>
+        <input id="passenger-name" type="text" name="name" placeholder="Name" required><br>
+        <input id="passenger-surname" type="text" name="surename" placeholder="Surename" required><br>
+        <input id="seat-number" type="number" name="seat" placeholder="Seat number" required><br>
+        <select id="category" name="Category">
+          <option value="">Category</option>
+          <option value="Y">Economy</option>
+          <option value="C">Business</option>
+        </select><br>
+
+        <div id="pax-error" class="error-display"></div>
+        <input class="button" type="button" value="Create Passenger" onclick="createPassenger()">
+        <div id="created-passenger" class="display-msg"></div>
+      </article>
+
+
+      <article id="flt">
+        <h3>CREATE FLIGHT</h3>
+        <input id="flight-origin" type="text" name="origin" placeholder="Origin"><br>
+        <input id="flight-destination" type="text" name="destination" placeholder="Destination"><br>
+        <input id="flight-date" type="date" name="flight-date"><br>
+
+        <div id="flt-error" class="error-display"></div>
+        <input class="button" type="button" value="Create Flight" onclick="createFlight()">
+        <div id="created-flight" class="display-msg"></div>
+      </article>
+
+
+      <article id="pax-to-flt">
+        <h3>ADD PASSENGER TO FLIGHT</h3>
+        <select id="select-passengers-list" name="passengers-list">
+          <option value="">Choose Passenger</option>
+        </select><br>
+        <select id="to-add-pax-flights-list" name="flights-list">
+          <option value="">Choose Flight</option>
+        </select><br>
+
+        <div id="add-pax-to-flt-error" class="error-display"></div>
+        <input class="button" type="button" value="Add Passenger to Flight" onclick="addPassengerToFlight()">
+        <div id="added-pax-list" class="display-msg"></div>
+      </article>
+
+
+      <article id="flt-to-apt">
+        <h3>ADD FLIGHT TO AIRPORT</h3>
+        <select id="to-add-flt-to-apt-flight-list" name="flight-list">
+          <option value="">Choose Flight</option>
+        </select><br>
+
+        <div id="add-flight-to-apt-error" class="error-display"></div>
+        <input class="button" type="button" value="Add Flight to Airport" onclick="addFlightToAirport()">
+        <div id="added-flight" class="display-msg"></div>
+      </article>
+
+
+      <article id="all-flts">
+        <h3>SHOW ALL FLIGHTS</h3>
+        <div id="all-flights-error" class="error-display"></div>
+        <input class="button" type="button" value="Show All Flights" onclick="showAllFlights()">
+        <div id="display-all-flights" class="display-msg"></div>
+      </article>
+
+    </form>
+
+  </main>
+  <footer>
+    <p>Airport Flight Schedule</p>
+    <p>Created by &copy; Darko Sasa</p>
+  </footer>
+</body>
+
+</html>
