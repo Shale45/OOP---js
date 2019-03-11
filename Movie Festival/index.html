@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Festival</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
+  <script src="JS/entities.js"></script>
+  <script src="JS/app.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>MOVIE FESTIVAL</h1>
+  </header>
+
+  <main>
+    <form>
+      <article id="create-movie">
+        <fieldset>
+          <legend>CREATE MOVIE</legend>
+          <input type="text" name="movie-title" id="movie-title" placeholder="  Movie Title" required><br>
+          <input type="number" name="movie-duration" id="movie-duration" placeholder="  Movie Duration (in minutes)"
+            required><br>
+          <select name="genre" id="genre">
+            <option value=""> Choose Genre</option>
+            <option value="action">Action</option>
+            <option value="drama">Drama</option>
+            <option value="triller">Triller</option>
+            <option value="comedy">Comedy</option>
+          </select><br>
+          <div id="movie-error"></div>
+          <input type="button" value="CREATE MOVIE" onclick="createMovie()" id="movie-button">
+          <hr>
+          <div id="movies-list"></div>
+        </fieldset>
+      </article>
+
+      <article id="create-program">
+        <fieldset>
+          <legend>CREATE PROGRAM</legend>
+          <input type="date" name="program-date" id="program-date"><br>
+          <div id="program-error"></div>
+          <input type="button" value="CREATE PROGRAM" onclick="createProgram()">
+          <hr>
+          <div id="program-list"></div>
+        </fieldset>
+      </article>
+
+      <article id="movie-to-program">
+        <fieldset>
+          <legend>ADD MOVIE TO PROGRAM</legend>
+          <select name="movie-to-program" id="select-movie">
+            <option value="">Choose Movie</option>
+          </select><br>
+          <select name="program" id="select-program">
+            <option value="">Choose Program</option>
+          </select><br>
+          <div id="add-movie-error"></div>
+          <input type="button" value="ADD MOVIE" onclick="addMovieToProgram()">
+          <hr>
+          <div id="program-list-of-movies"></div>
+        </fieldset>
+      </article>
+
+      <article id="program-add-to-festival">
+        <fieldset>
+          <legend>ADD PROGRAM TO FESTIVAL</legend>
+          <select name="program-to-festival" id="program-to-festival">
+            <option value="">Choose Program</option>
+          </select><br>
+          <div id="program-festival-error"></div>
+          <input type="button" value="ADD PROGRAM" onclick="addProgramToFestival()">
+          <hr>
+          <div id="program-added"></div>
+          <input type="button" value="SHOW FESTIVAL" onclick="showFestivalProgram()">
+          <hr>
+          <div id="program-festival-list"></div>
+        </fieldset>
+      </article>
+    </form>
+  </main>
+  <footer>
+    <p>Movie Festival App by Darko Sasa</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html,
+body {
+  box-sizing: border-box;
+  background-color: #022140;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifC;
+  color: #343148;
+}
+
+main {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+article {
+  background-color: #0074D9;
+  padding: 10px;
+  padding-right: 10px;
+  margin: 30px 0;
+  border-radius: 10px;
+
+}
+
+form {
+  width: 100%;
+  legend {
+    font-weight: bold;
+    font-size: 90%;
+    color: #FFDC00;
+  }
+  input, select {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 7px 0;
+  }
+  select {
+    width: 100%;
+  }
+  input[type=button] {
+      width: 60%;
+      display: block;
+      margin: 10px auto;
+      color: black;
+      font-weight: bold;
+      background-color: #f1e3dd;
+      background-color: chartreuse;
+  }
+}
+
+h1 {
+  color: #FFDC00;
+  text-align: center;
+  padding: 10px;
+  font-size: 200%;
+  margin: 50px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#movie-error,
+#program-error,
+#add-movie-error,
+#program-festival-error {
+  color: chartreuse;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+#movies-list,
+#program-list,
+#program-list-of-movies,
+#program-festival-list,
+#program-added {
+  font-weight: bold;
+  color: #001f3f;
+}
+
+li {
+  padding: 5px;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #FFDC00;
+  //background-color: #66FCF1;
+  text-align: center;
+  color: #0B0C10;
+  font-weight: bold;
+  padding: 40px;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    width: 60%;
+  }
+  h1 {
+    font-size: 300%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    width: 50%;
+  }
+  h1 {
+    font-size: 300%;
+  }
+}
