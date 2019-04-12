@@ -2,6 +2,7 @@ let moviesList = [];
 let programsList = [];
 let summerFestival = new Festival("Summer Festival");
 
+
 function createMovie() {
 
   let titleElement = document.getElementById("movie-title");
@@ -9,15 +10,21 @@ function createMovie() {
   let genreElement = document.getElementById("genre");
   let selectedGenreElement = genreElement[genreElement.selectedIndex];
   let errorElement = document.getElementById("movie-error");
-  let selectMovie= document.getElementById("select-movie");
+  let selectMovie = document.getElementById("select-movie");
   let movieListElement = document.getElementById("movies-list");
 
   let title = titleElement.value;
   let length = parseInt(lengthElement.value);
   let genre = selectedGenreElement.value;
 
-  if(!title || !length || (genre === "")) {
-    errorElement.textContent = "Error! Please input movie title, length and genre";
+  if (!title) {
+    errorElement.textContent = "Error! Please input movie title";
+    return;
+  } else if (!length) {
+    errorElement.textContent = "Error! Please input movie length";
+    return;
+  } else if (genre === "") {
+    errorElement.textContent = "Error! Please choose genre";
     return;
   }
 
@@ -53,9 +60,9 @@ function createProgram() {
   let programToFestivalSelect = document.getElementById("program-to-festival");
 
   let date = dateElement.value;
-  
-  if(!date) {
-    errorElement.textContent ="Error, Please select festival Date."
+
+  if (!date) {
+    errorElement.textContent = "Error, Please select program Date."
     return;
   }
 
@@ -89,15 +96,15 @@ function addMovieToProgram() {
   let selectedMove = movieSelectElement[movieSelectElement.selectedIndex].value;
   let selectedProgram = programSelectElement[programSelectElement.selectedIndex].value;
 
-  if(selectedMove === "" || selectedProgram == "") {
+  if (selectedMove === "" || selectedProgram == "") {
     errorElement.textContent = "Error! Please select Movie & Program";
     return;
-  }
+  };
 
   errorElement.textContent = "";
 
   programsList[selectedProgram].listOfMovies.push(moviesList[selectedMove]);
-  
+
   let listOfMoviesInProgram = programsList[selectedProgram].listOfMovies;
   let programOutput = "<p>" + programsList[selectedProgram].getData() + "</p>";
   programOutput += "<ol>";
@@ -121,8 +128,8 @@ function addProgramToFestival() {
   let programAdded = document.getElementById("program-added");
 
   if (selectedProgram == "") {
-    errorFestivalElement.textContent = "Error! Please select Program"; 
-    return;   
+    errorFestivalElement.textContent = "Error! Please select Program";
+    return;
   }
   errorFestivalElement.textContent = "";
   summerFestival.listOfPrograms.push(programsList[selectedProgram]);
@@ -136,5 +143,5 @@ function showFestivalProgram() {
 
   let showFestival = summerFestival.getData();
   programFestivalElement.innerHTML = showFestival;
-  
+
 };
