@@ -5,11 +5,11 @@
 html,
 body {
   box-sizing: border-box;
-  background: linear-gradient(to top, #ffffff 0%, #60dfdf 100%);
+  background: linear-gradient(to top, #ffffff 0%, #FFA873 100%);
   background-repeat: no-repeat;
   height: auto;
   width: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifC;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #343148; }
 
 main {
@@ -19,7 +19,7 @@ main {
   box-sizing: border-box; }
 
 article {
-  background-color: #102b53;
+  background-color: #00A480;
   padding: 10px;
   padding-right: 10px;
   margin: 40px 0;
@@ -51,12 +51,12 @@ form {
     margin: 15px auto;
     color: black;
     font-weight: bold;
-    background-color: #66ccff;
+    background-color: #ff6200;
     letter-spacing: 1px;
     border-radius: 10px;
     outline: none; }
   form input[type=button]:hover {
-    background-color: #2283f2;
+    background-color: #ff8940;
     color: #fff; }
 
 h1 {

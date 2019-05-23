@@ -7,7 +7,7 @@ body {
   height: auto;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("../img/5.jpg");
+  background-image: url("../img/4.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,7 +19,8 @@ header {
   background-color: #1a1b24; }
   header h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 300%;
+    font-weight: 150%;
+    font-size: 2.5rem;
     text-align: center;
     padding: 50px 0;
     color: wheat; }
@@ -30,15 +31,15 @@ header {
   margin: 0 auto; }
   .container h2 {
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 2rem;
     text-align: center;
     margin: 40px 0;
-    color: #1a1b24; }
+    color: wheat; }
   .container h3 {
     color: wheat; }
 
 article {
-  background-color: #1a1b24;
+  background-color: #130f40;
   margin: 30px 0;
   padding: 10px 15px;
   border-radius: 0 20px; }
@@ -54,8 +55,7 @@ article {
     border-radius: 10px;
     outline: none; }
   article input[type=button] {
-    background-color: aqua;
-    background-color: #ff8000;
+    background-color: #fdcb6e;
     display: block;
     font-weight: bold;
     font-size: 90%;
@@ -64,11 +64,10 @@ article {
     border: 2px solid black;
     border-radius: 15px; }
   article input[type=button]:hover {
-    background-color: aqua;
-    background-color: #ff9933;
+    background-color: #ffeaa7;
     cursor: pointer; }
   article .error-display {
-    color: red;
+    color: #ff0202;
     font-weight: bold;
     padding: 5px 0; }
   article .display-msg {

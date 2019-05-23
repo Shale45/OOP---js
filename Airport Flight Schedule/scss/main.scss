@@ -8,7 +8,7 @@ body {
   height: auto;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("../img/5.jpg");
+  background-image: url("../img/4.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -21,10 +21,11 @@ header {
   background-color: rgb(26, 27, 36);
   h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 300%;
+    font-weight: 150%;
+    font-size: 2.5rem;
     text-align: center;
     padding: 50px 0;
-    color: wheat;
+    color: rgb(245, 222, 179);
   }
 }
 
@@ -34,18 +35,19 @@ header {
   margin: 0 auto;
   h2 {
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 2rem;
     text-align: center;
     margin: 40px 0;
-    color: rgb(26, 27, 36);
+    color: rgb(245, 222, 179);
+   
   }
   h3 {
-    color: wheat;
+    color: rgb(245, 222, 179);
   }
 }
 
 article {
-  background-color: rgb(26, 27, 36);
+  background-color: #130f40;
   margin: 30px 0;
   padding: 10px 15px;
   border-radius: 0 20px;
@@ -58,34 +60,32 @@ article {
     width: 100%;
     margin: 5px 0;
     padding: 10px 20px;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
     outline: none;
   }
   input[type=button] {
-    background-color: aqua;
-    background-color: #ff8000;
+    background-color: #fdcb6e;
     display: block;
     font-weight: bold;
     font-size: 90%;
     width: 80%;
     margin: 0 auto;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 15px;
   }
 
   input[type=button]:hover {
-    background-color: aqua;
-    background-color: #ff9933;
+    background-color: #ffeaa7;
     cursor: pointer;
   }
   .error-display {
-    color: red;
+    color: rgb(255, 2, 2);
     font-weight: bold;
     padding: 5px 0;
   }
   .display-msg {
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 10px 0;
     padding-left: 10px;
   }
@@ -107,7 +107,7 @@ footer {
   padding: 30px;
   margin-top: 60px;
   p {
-    color: wheat;
+    color: rgb(245, 222, 179);
     text-align: center;
     margin: 10px 0;
   }
